@@ -56,28 +56,59 @@ export default function Home() {
   return (
     <div ref={mainRef}>
       {/* HERO */}
-      <section className="hero-section relative h-screen min-h-[700px] flex items-end overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={heroImg} alt="Val di Fiemme" className="hero-bg-img w-full h-[120%] object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
-        </div>
-        <div className="relative z-10 px-5 md:px-10 lg:px-16 pb-16 md:pb-24 w-full">
-          <div className="overflow-hidden"><p className="hero-line text-[0.65rem] uppercase tracking-[0.35em] text-white/50 mb-6">Predazzo · Val di Fiemme · 1.018 m s.l.m.</p></div>
-          <div className="overflow-hidden"><h1 className="hero-line font-serif fluid-display text-white max-w-[80vw]">Agritur</h1></div>
-          <div className="overflow-hidden"><h1 className="hero-line font-serif fluid-display text-white max-w-[80vw] ml-[5vw] md:ml-[12vw]">Maso Lena</h1></div>
-          <div className="mt-10 md:mt-14 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-            <p className="hero-sub text-white/60 max-w-md fluid-body-lg font-light leading-relaxed">
-              L'emozione di un mondo autentico che sa interpretare lo spirito semplice e legato alle tradizioni.
-            </p>
-            <div className="hero-cta flex gap-4">
-              <Link to="/contatti" className="btn-creative"><span>Prenota</span><ArrowUpRight className="w-4 h-4" /></Link>
-              <Link to="/le-camere" className="btn-outline !border-white/30 !text-white/70 hover:!bg-white/10 hover:!border-white/50 hover:!text-white"><span>Le camere</span></Link>
-            </div>
+      <section className="hero-section relative h-screen min-h-[700px] overflow-hidden" style={{ background: 'var(--wood-900)' }}>
+        {/* Photo grid background */}
+        <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1.5 p-1.5 opacity-60">
+          <div className="overflow-hidden row-span-2">
+            <img src={heroImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+          </div>
+          <div className="overflow-hidden">
+            <img src={cavalloImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+          </div>
+          <div className="overflow-hidden">
+            <img src={salaImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+          </div>
+          <div className="overflow-hidden">
+            <img src={famigliaImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+          </div>
+          <div className="overflow-hidden">
+            <img src={panoramaImg} alt="" className="hero-bg-img w-full h-full object-cover" />
           </div>
         </div>
-        <div className="hero-scroll absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <span className="text-[0.55rem] uppercase tracking-[0.3em] text-white/30">Scorri</span>
-          <ArrowDown className="w-4 h-4 text-white/30 animate-bounce" />
+
+        {/* Dark overlay on grid */}
+        <div className="absolute inset-0 bg-black/40" />
+
+        {/* Title overlay */}
+        <div className="relative z-10 h-full flex flex-col justify-between px-5 md:px-10 lg:px-16 py-28 md:py-20">
+          {/* Top */}
+          <div className="overflow-hidden">
+            <p className="hero-line text-[0.55rem] uppercase tracking-[0.5em] text-white/35">Agriturismo · Predazzo · Val di Fiemme</p>
+          </div>
+
+          {/* Center — big title */}
+          <div className="flex-1 flex items-center justify-center">
+            <div className="text-center">
+              <div className="overflow-hidden">
+                <h1 className="hero-line font-serif text-[18vw] md:text-[12vw] leading-[0.85] text-transparent" style={{ WebkitTextStroke: '1.5px rgba(255,255,255,0.7)' }}>Maso</h1>
+              </div>
+              <div className="overflow-hidden">
+                <h1 className="hero-line font-serif text-[18vw] md:text-[12vw] leading-[0.85] text-white">Lena</h1>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+            <p className="hero-sub text-white/80 max-w-md text-base md:text-lg font-medium leading-relaxed">
+              L'emozione di un mondo autentico che sa interpretare
+              lo spirito semplice e legato alle tradizioni.
+            </p>
+            <div className="hero-cta flex gap-3">
+              <Link to="/contatti" className="btn-creative"><span>Prenota</span><ArrowUpRight className="w-4 h-4" /></Link>
+              <Link to="/le-camere" className="btn-outline !border-white/25 !text-white/60 hover:!bg-white/10 hover:!border-white/40 hover:!text-white"><span>Le camere</span></Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -330,21 +361,69 @@ export default function Home() {
       </section>
 
       {/* CTA FINALE */}
-      <section className="cta-section relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img src={masoImg} alt="Maso Lena" className="para-img w-full h-[120%] object-cover" />
-          <div className="absolute inset-0 bg-black/60" />
+      <section className="cta-section relative py-28 md:py-40 overflow-hidden" style={{ background: 'var(--wood-900)' }}>
+        {/* Decorative background text */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none select-none">
+          <p className="font-serif text-[20vw] leading-none text-white/[0.02] whitespace-nowrap">Maso Lena</p>
         </div>
-        <div className="relative z-10 px-5 md:px-10 lg:px-16 cta-text">
-          <p className="text-[0.65rem] uppercase tracking-[0.3em] text-white/40 mb-6">Val di Fiemme · Dolomiti</p>
-          <h2 className="font-serif fluid-h1 text-white max-w-2xl mb-8">Vieni a trovarci</h2>
-          <div className="flex gap-4 flex-wrap">
-            <Link to="/contatti" className="btn-creative !bg-white !text-wood-900 hover:!text-wood-900">
-              <span>Richiedi un preventivo</span><ArrowUpRight className="w-4 h-4" />
-            </Link>
-            <Link to="/come-arrivare" className="btn-outline !border-white/30 !text-white/70 hover:!bg-white/10 hover:!border-white/50 hover:!text-white">
-              <span>Come arrivare</span>
-            </Link>
+
+        <div className="relative z-10 px-5 md:px-10 lg:px-16">
+          {/* Top heading */}
+          <div className="mb-16 md:mb-20 cta-text text-center">
+            <p className="text-[0.65rem] uppercase tracking-[0.3em] text-white/40 mb-5">Val di Fiemme · Dolomiti</p>
+            <h2 className="font-serif fluid-h1 text-white">Vieni a trovarci</h2>
+          </div>
+
+          {/* Grid: map + info */}
+          <div className="grid grid-cols-12 gap-6 md:gap-10 items-start">
+            {/* Left — map */}
+            <div className="col-span-12 md:col-span-7 cta-text">
+              <div className="aspect-[16/10] w-full overflow-hidden border border-white/10">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2749.8!2d11.5977!3d46.3147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47786a5c8b4e4f1d%3A0x9a2b3c4d5e6f7890!2sAgritur%20Maso%20Lena!5e0!3m2!1sit!2sit!4v1700000000000!5m2!1sit!2sit"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mappa Agritur Maso Lena - Predazzo"
+                  className="w-full h-full"
+                />
+              </div>
+            </div>
+
+            {/* Right — info card */}
+            <div className="col-span-12 md:col-span-5 cta-text">
+              <div className="border border-white/10 p-8 md:p-10">
+                <p className="text-white/80 leading-relaxed font-light mb-8">
+                  Prenota il tuo soggiorno e vivi l'autenticità della montagna trentina.
+                  Ti aspettiamo a Predazzo, nel cuore della Val di Fiemme.
+                </p>
+                <div className="border-t border-white/10 pt-6 mb-8 space-y-3">
+                  <div className="flex items-start gap-3">
+                    <span className="text-white/30 text-xs uppercase tracking-widest shrink-0 mt-0.5 w-16">Dove</span>
+                    <span className="text-white/60 text-sm">Località Löze, Via Salita alla Cascata 3, 38037 Predazzo (TN)</span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-white/30 text-xs uppercase tracking-widest shrink-0 mt-0.5 w-16">Tel</span>
+                    <a href="tel:+393407128301" className="text-white/60 text-sm hover:text-white transition-colors">+39 340 712 8301</a>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-white/30 text-xs uppercase tracking-widest shrink-0 mt-0.5 w-16">Email</span>
+                    <a href="mailto:info@masolena.it" className="text-white/60 text-sm hover:text-white transition-colors">info@masolena.it</a>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-3">
+                  <Link to="/contatti" className="btn-creative">
+                    <span>Richiedi un preventivo</span><ArrowUpRight className="w-4 h-4" />
+                  </Link>
+                  <Link to="/come-arrivare" className="btn-outline !border-white/25 !text-white/60 hover:!bg-white/10 hover:!border-white/40 hover:!text-white">
+                    <span>Come arrivare</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
