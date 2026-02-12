@@ -136,6 +136,10 @@ export default function Ristorante() {
           <img
             src={ristoranteImg}
             alt="Sala ristorante Maso Lena"
+            title="Sala ristorante Maso Lena"
+            loading="eager"
+            width={800}
+            height={500}
             className="rist-hero-bg w-full h-[120%] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/30" />
@@ -200,6 +204,10 @@ export default function Ristorante() {
               <img
                 src={ristoranteDettaglio}
                 alt="Dettaglio ristorante"
+                title="Dettaglio ristorante"
+                loading="lazy"
+                width={800}
+                height={600}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -232,6 +240,10 @@ export default function Ristorante() {
               <img
                 src={salaImg}
                 alt="Tavolo ristorante dettaglio"
+                title="Tavolo ristorante dettaglio"
+                loading="lazy"
+                width={600}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -356,6 +368,10 @@ export default function Ristorante() {
               <img
                 src={canederli}
                 alt="Canederli trentini"
+                title="Canederli trentini"
+                loading="lazy"
+                width={600}
+                height={800}
                 className="para-img-rist w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
@@ -376,6 +392,10 @@ export default function Ristorante() {
               <img
                 src={gulash}
                 alt="Gulasch con polenta"
+                title="Gulasch con polenta"
+                loading="lazy"
+                width={800}
+                height={500}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
@@ -389,6 +409,10 @@ export default function Ristorante() {
               <img
                 src={speck}
                 alt="Speck alla griglia con insalata"
+                title="Speck alla griglia con insalata"
+                loading="lazy"
+                width={800}
+                height={500}
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 via-black/30 to-transparent">
@@ -407,6 +431,10 @@ export default function Ristorante() {
             <img
               src={carneSalada}
               alt="Carne salada con fagioli"
+              title="Carne salada con fagioli"
+              loading="lazy"
+              width={800}
+              height={500}
               className="para-img-rist w-full h-full object-cover"
             />
           </div>
@@ -473,6 +501,10 @@ export default function Ristorante() {
               <img
                 src={strudel}
                 alt="Strudel con panna"
+                title="Strudel con panna"
+                loading="lazy"
+                width={600}
+                height={800}
                 className="para-img-rist w-full h-full object-cover"
               />
             </div>
@@ -506,6 +538,10 @@ export default function Ristorante() {
           <img
             src={ristoranteImg}
             alt="Sala ristorante panoramica"
+            title="Sala ristorante panoramica"
+            loading="lazy"
+            width={800}
+            height={500}
             className="para-img-rist w-full h-full object-cover"
           />
         </div>
@@ -561,6 +597,10 @@ export default function Ristorante() {
                 <img
                   src={item.img}
                   alt={item.title}
+                  title={item.title}
+                  loading="lazy"
+                  width={600}
+                  height={800}
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -579,6 +619,10 @@ export default function Ristorante() {
           <img
             src={ristoranteDettaglio}
             alt="Ristorante Maso Lena"
+            title="Ristorante Maso Lena"
+            loading="lazy"
+            width={800}
+            height={500}
             className="para-img-rist w-full h-[120%] object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />

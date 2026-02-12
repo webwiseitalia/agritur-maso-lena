@@ -52,7 +52,7 @@ export default function ComeArrivare() {
       {/* HERO */}
       <section className="arrive-hero relative h-[75vh] min-h-[550px] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img src={masoImg} alt="Maso Lena inverno" className="arrive-hero-img w-full h-[130%] object-cover" />
+          <img src={masoImg} alt="Maso Lena inverno" title="Maso Lena inverno" loading="eager" width={800} height={500} className="arrive-hero-img w-full h-[130%] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
         </div>
         <div className="relative z-10 px-5 md:px-10 lg:px-16 pb-16 md:pb-24 w-full">

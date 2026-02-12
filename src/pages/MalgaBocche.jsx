@@ -46,7 +46,7 @@ export default function MalgaBocche() {
       {/* HERO */}
       <section className="malga-hero relative h-[80vh] min-h-[600px] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img src={panoramaImg} alt="Malga Bocche panorama" className="malga-hero-img w-full h-[130%] object-cover" />
+          <img src={panoramaImg} alt="Malga Bocche panorama" title="Malga Bocche panorama" loading="eager" width={800} height={500} className="malga-hero-img w-full h-[130%] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-black/10" />
         </div>
         <div className="relative z-10 px-5 md:px-10 lg:px-16 pb-16 md:pb-24 w-full">
@@ -93,7 +93,7 @@ export default function MalgaBocche() {
         <div className="grid grid-cols-12 gap-4 md:gap-8 items-start">
           <div className="col-span-12 md:col-span-7" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="cuisine-img img-hover-zoom aspect-[4/3] md:aspect-[16/10]">
-              <img src={goulashImg} alt="Cucina di Malga Bocche" className="w-full h-full object-cover" />
+              <img src={goulashImg} alt="Cucina di Malga Bocche" title="Cucina di Malga Bocche" loading="lazy" width={800} height={600} className="w-full h-full object-cover" />
             </div>
           </div>
           <div className="col-span-12 md:col-span-4 md:col-start-9 cuisine-text md:mt-[-6vh]">
@@ -136,7 +136,7 @@ export default function MalgaBocche() {
           </div>
           <div className="col-span-12 md:col-span-6 md:col-start-7 order-1 md:order-2" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="farm-img img-hover-zoom aspect-[4/3]">
-              <img src={famigliaImg} alt="Fattoria didattica a Malga Bocche" className="malga-para-img w-full h-full object-cover" />
+              <img src={famigliaImg} alt="Fattoria didattica a Malga Bocche" title="Fattoria didattica a Malga Bocche" loading="lazy" width={800} height={600} className="malga-para-img w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function MalgaBocche() {
       {/* CARRIAGE IMAGE — full width with parallax */}
       <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
         <div className="parallax-img-wrap absolute inset-0">
-          <img src={cavalloImg} alt="Cavallo Norico" className="malga-para-img w-full h-[130%] object-cover" />
+          <img src={cavalloImg} alt="Cavallo Norico" title="Cavallo Norico" loading="lazy" width={800} height={500} className="malga-para-img w-full h-[130%] object-cover" />
           <div className="absolute inset-0 bg-black/30" />
         </div>
       </section>

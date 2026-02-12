@@ -60,19 +60,19 @@ export default function Home() {
         {/* Photo grid background */}
         <div className="absolute inset-0 grid grid-cols-3 grid-rows-2 gap-1.5 p-1.5 opacity-60">
           <div className="overflow-hidden row-span-2">
-            <img src={heroImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+            <img src={heroImg} alt="" title="Agritur Maso Lena" loading="eager" width={800} height={600} className="hero-bg-img w-full h-full object-cover" />
           </div>
           <div className="overflow-hidden">
-            <img src={cavalloImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+            <img src={cavalloImg} alt="" title="Agritur Maso Lena" loading="eager" width={800} height={600} className="hero-bg-img w-full h-full object-cover" />
           </div>
           <div className="overflow-hidden">
-            <img src={salaImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+            <img src={salaImg} alt="" title="Agritur Maso Lena" loading="eager" width={800} height={600} className="hero-bg-img w-full h-full object-cover" />
           </div>
           <div className="overflow-hidden">
-            <img src={famigliaImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+            <img src={famigliaImg} alt="" title="Agritur Maso Lena" loading="eager" width={800} height={600} className="hero-bg-img w-full h-full object-cover" />
           </div>
           <div className="overflow-hidden">
-            <img src={panoramaImg} alt="" className="hero-bg-img w-full h-full object-cover" />
+            <img src={panoramaImg} alt="" title="Agritur Maso Lena" loading="eager" width={800} height={600} className="hero-bg-img w-full h-full object-cover" />
           </div>
         </div>
 
@@ -129,7 +129,7 @@ export default function Home() {
           {/* Left image */}
           <div className="hidden md:block col-span-3 intro-img-left" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[3/4]">
-              <img src={salaImg} alt="La sala del ristorante" className="w-full h-full object-cover" />
+              <img src={salaImg} alt="La sala del ristorante" title="La sala del ristorante" loading="lazy" width={600} height={800} className="w-full h-full object-cover" />
             </div>
           </div>
 
@@ -150,7 +150,7 @@ export default function Home() {
           {/* Right image */}
           <div className="hidden md:block col-span-3 intro-img-right mt-12" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[3/4]">
-              <img src={vistaImg} alt="Vista sulle montagne" className="w-full h-full object-cover" />
+              <img src={vistaImg} alt="Vista sulle montagne" title="Vista sulle montagne" loading="lazy" width={600} height={800} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-4 md:gap-6 items-start">
           <div className="col-span-12 md:col-span-7 maso-img-main" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[4/3] md:aspect-[16/10]">
-              <img src={masoImg} alt="Maso Lena" className="w-full h-full object-cover" />
+              <img src={masoImg} alt="Maso Lena" title="Maso Lena" loading="lazy" width={800} height={500} className="w-full h-full object-cover" />
             </div>
           </div>
           <div className="col-span-12 md:col-span-4 md:col-start-9 maso-text md:mt-[-8vh]">
@@ -175,7 +175,7 @@ export default function Home() {
           </div>
           <div className="col-span-8 md:col-span-4 md:col-start-6 maso-img-secondary mt-[-10vw] md:mt-[-12vw] relative z-10" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[3/4] shadow-2xl">
-              <img src={panoramaImg} alt="Inverno al maso" className="w-full h-full object-cover" />
+              <img src={panoramaImg} alt="Inverno al maso" title="Inverno al maso" loading="lazy" width={600} height={800} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -226,7 +226,7 @@ export default function Home() {
             </div>
             <div className="col-span-12 md:col-span-6 md:col-start-7 rooms-img-reveal" style={{ clipPath: 'inset(0 0 0 0)' }}>
               <div className="img-hover-zoom aspect-[16/10]">
-                <img src={cameraImg} alt="Camera del maso" className="w-full h-full object-cover" />
+                <img src={cameraImg} alt="Camera del maso" title="Camera del maso" loading="lazy" width={800} height={500} className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -282,12 +282,12 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-4 md:gap-6 mt-8">
             <div className="col-span-6 md:col-span-4 room-card-home">
               <div className="img-hover-zoom aspect-[4/5]">
-                <img src={internoSalaImg} alt="Interni del maso" className="w-full h-full object-cover" />
+                <img src={internoSalaImg} alt="Interni del maso" title="Interni del maso" loading="lazy" width={600} height={800} className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="col-span-6 md:col-span-4 room-card-home">
               <div className="img-hover-zoom aspect-[4/5]">
-                <img src={cavalloImg} alt="Cavalli del maso" className="w-full h-full object-cover" />
+                <img src={cavalloImg} alt="Cavalli del maso" title="Cavalli del maso" loading="lazy" width={600} height={800} className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="col-span-12 md:col-span-4 room-card-home flex flex-col justify-center items-center text-center p-8" style={{ background: 'var(--cream-200)' }}>
@@ -322,7 +322,7 @@ export default function Home() {
           ].map((item, i) => (
             <div key={i} className={`rist-img shrink-0 ${i === 0 ? 'w-[70vw] md:w-[40vw]' : 'w-[55vw] md:w-[28vw]'}`}>
               <div className="img-hover-zoom aspect-[4/5]">
-                <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
+                <img src={item.img} alt={item.title} title={item.title} loading="lazy" width={600} height={750} className="w-full h-full object-cover" />
               </div>
               <div className="mt-4">
                 <h3 className="font-serif text-lg text-wood-800">{item.title}</h3>
@@ -339,7 +339,7 @@ export default function Home() {
       {/* MALGA BOCCHE */}
       <section className="malga-section relative h-[85vh] min-h-[550px] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img src={slittaImg} alt="Slitta verso Malga Bocche" className="para-img w-full h-[120%] object-cover" />
+          <img src={slittaImg} alt="Slitta verso Malga Bocche" title="Slitta verso Malga Bocche" loading="lazy" width={800} height={600} className="para-img w-full h-[120%] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
         </div>
         <div className="relative z-10 px-5 md:px-10 lg:px-16 pb-16 md:pb-24 w-full">

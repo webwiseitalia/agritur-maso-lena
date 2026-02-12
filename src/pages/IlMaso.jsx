@@ -72,7 +72,7 @@ export default function IlMaso() {
       {/* ═══════════════════ HERO ═══════════════════ */}
       <section className="maso-hero relative h-screen min-h-[700px] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img src={masoEstate} alt="Maso Lena in estate" className="maso-hero-bg w-full h-[120%] object-cover" />
+          <img src={masoEstate} alt="Maso Lena in estate" title="Maso Lena in estate" loading="eager" width={800} height={500} className="maso-hero-bg w-full h-[120%] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" />
         </div>
         <div className="relative z-10 px-5 md:px-10 lg:px-16 pb-16 md:pb-24 w-full">
@@ -120,14 +120,14 @@ export default function IlMaso() {
           {/* Right column: large family image */}
           <div className="col-span-12 md:col-span-6 md:col-start-7 story-img-left" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[4/5]">
-              <img src={famiglia} alt="La famiglia Dellagiacoma" className="w-full h-full object-cover" />
+              <img src={famiglia} alt="La famiglia Dellagiacoma" title="La famiglia Dellagiacoma" loading="lazy" width={600} height={800} className="w-full h-full object-cover" />
             </div>
           </div>
 
           {/* Overlapping secondary image — pulled up into the gap */}
           <div className="col-span-8 md:col-span-4 md:col-start-4 story-img-right mt-[-8vw] md:mt-[-14vw] relative z-10" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[3/2] shadow-2xl">
-              <img src={famigliaVitelli} alt="Famiglia con le mucche al maso" className="w-full h-full object-cover" />
+              <img src={famigliaVitelli} alt="Famiglia con le mucche al maso" title="Famiglia con le mucche al maso" loading="lazy" width={800} height={600} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function IlMaso() {
           {/* Panorama image — wide, offset */}
           <div className="col-span-12 md:col-span-7 pano-img" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[16/9]">
-              <img src={panorama} alt="Panorama della Val di Fiemme e catena del Lagorai" className="para-img w-full h-full object-cover" />
+              <img src={panorama} alt="Panorama della Val di Fiemme e catena del Lagorai" title="Panorama della Val di Fiemme e catena del Lagorai" loading="lazy" width={800} height={500} className="para-img w-full h-full object-cover" />
             </div>
           </div>
 
@@ -172,7 +172,7 @@ export default function IlMaso() {
           {/* Small mountain window image — floating overlap */}
           <div className="col-span-7 md:col-span-3 md:col-start-8 pano-img-small mt-[-4vw] md:mt-[-8vw] relative z-10">
             <div className="img-hover-zoom aspect-[3/4] shadow-2xl">
-              <img src={montagna} alt="Vista montagna dalla finestra" className="w-full h-full object-cover" />
+              <img src={montagna} alt="Vista montagna dalla finestra" title="Vista montagna dalla finestra" loading="lazy" width={600} height={800} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -233,7 +233,7 @@ export default function IlMaso() {
           {/* Main horse image — spanning wide */}
           <div className="col-span-12 md:col-span-7 md:col-start-1 norici-img-main" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[4/3]">
-              <img src={cavallo} alt="Cavallo Norico con il fienile" className="para-img w-full h-full object-cover" />
+              <img src={cavallo} alt="Cavallo Norico con il fienile" title="Cavallo Norico con il fienile" loading="lazy" width={800} height={600} className="para-img w-full h-full object-cover" />
             </div>
           </div>
 
@@ -260,7 +260,7 @@ export default function IlMaso() {
           {/* Sleigh image — overlapping below, pulled left into the grid gap */}
           <div className="col-span-9 md:col-span-4 md:col-start-5 norici-img-secondary mt-[-6vw] md:mt-[-10vw] relative z-10" style={{ clipPath: 'inset(0 0 0 0)' }}>
             <div className="img-hover-zoom aspect-[16/10] shadow-2xl">
-              <img src={slitta} alt="Slitta con cavalli Norici nella neve" className="w-full h-full object-cover" />
+              <img src={slitta} alt="Slitta con cavalli Norici nella neve" title="Slitta con cavalli Norici nella neve" loading="lazy" width={800} height={500} className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
@@ -281,7 +281,7 @@ export default function IlMaso() {
             {/* SUMMER — taller, left-aligned */}
             <div className="season-summer md:w-[55%]">
               <div className="img-hover-zoom aspect-[3/4] relative">
-                <img src={masoEstate} alt="Maso Lena in estate" className="para-img w-full h-full object-cover" />
+                <img src={masoEstate} alt="Maso Lena in estate" title="Maso Lena in estate" loading="lazy" width={600} height={800} className="para-img w-full h-full object-cover" />
                 <div className="absolute top-0 left-0 p-6 md:p-10">
                   <span
                     className="font-serif text-[4rem] md:text-[6rem] leading-none text-transparent"
@@ -313,7 +313,7 @@ export default function IlMaso() {
             {/* WINTER — shorter, offset downward */}
             <div className="season-winter md:w-[45%] md:mt-[12vh]">
               <div className="img-hover-zoom aspect-[4/5] relative">
-                <img src={masoInverno} alt="Maso Lena in inverno" className="para-img w-full h-full object-cover" />
+                <img src={masoInverno} alt="Maso Lena in inverno" title="Maso Lena in inverno" loading="lazy" width={600} height={800} className="para-img w-full h-full object-cover" />
                 <div className="absolute top-0 right-0 p-6 md:p-10">
                   <span
                     className="font-serif text-[4rem] md:text-[6rem] leading-none text-transparent"
@@ -348,7 +348,7 @@ export default function IlMaso() {
       {/* ═══════════════════ CTA — Full-bleed image, left-aligned ═══════════════════ */}
       <section className="cta-section relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={panorama} alt="Val di Fiemme panorama" className="para-img w-full h-[120%] object-cover" />
+          <img src={panorama} alt="Val di Fiemme panorama" title="Val di Fiemme panorama" loading="lazy" width={800} height={500} className="para-img w-full h-[120%] object-cover" />
           <div className="absolute inset-0 bg-black/60" />
         </div>
         <div className="relative z-10 px-5 md:px-10 lg:px-16 cta-content">

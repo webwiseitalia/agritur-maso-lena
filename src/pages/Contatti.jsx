@@ -65,7 +65,7 @@ export default function Contatti() {
       {/* HERO */}
       <section className="contatti-hero relative h-[70vh] min-h-[500px] flex items-end overflow-hidden">
         <div className="absolute inset-0">
-          <img src={masoImg} alt="Maso Lena" className="contatti-hero-img w-full h-[130%] object-cover" />
+          <img src={masoImg} alt="Maso Lena" title="Maso Lena" loading="eager" width={800} height={500} className="contatti-hero-img w-full h-[130%] object-cover" />
           <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/10" />
         </div>
         <div className="relative z-10 px-5 md:px-10 lg:px-16 pb-16 md:pb-24 w-full">

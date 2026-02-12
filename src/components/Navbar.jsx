@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <div className="relative z-10 flex items-center justify-between px-5 md:px-10 lg:px-16">
           <Link to="/" className="flex items-center gap-3 group">
-            <img src={logo} alt="Maso Lena" className="h-11 w-auto transition-transform duration-500 group-hover:rotate-[-4deg]" />
+            <img src={logo} alt="Maso Lena" title="Maso Lena" loading="eager" width={64} height={64} className="h-11 w-auto transition-transform duration-500 group-hover:rotate-[-4deg]" />
             <div className="hidden md:block">
               <span className={`font-serif text-lg tracking-tight transition-colors duration-500 ${
                 scrolled ? 'text-wood-800' : 'text-white'

@@ -170,8 +170,11 @@ export default function Galleria() {
                 <img
                   src={photo.src}
                   alt={photo.alt}
+                  title={photo.alt}
                   className="w-full h-full object-cover"
                   loading="lazy"
+                  width={600}
+                  height={400}
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-500 flex items-end">
                   <div className="p-4 md:p-5 translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
@@ -220,6 +223,10 @@ export default function Galleria() {
           <img
             src={filteredPhotos[lightbox].src}
             alt={filteredPhotos[lightbox].alt}
+            title={filteredPhotos[lightbox].alt}
+            loading="lazy"
+            width={1200}
+            height={800}
             className="max-h-[85vh] max-w-[90vw] object-contain select-none"
             onClick={(e) => e.stopPropagation()}
           />

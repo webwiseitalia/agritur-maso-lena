@@ -52,7 +52,7 @@ export default function Footer() {
 
         <div className="grid grid-cols-2 md:grid-cols-12 gap-y-10 gap-x-6 mb-16">
           <div className="footer-col col-span-2 md:col-span-3">
-            <img src={logo} alt="Maso Lena" className="h-16 w-auto mb-4 rounded-full bg-white/10 p-1" />
+            <img src={logo} alt="Maso Lena" title="Maso Lena" loading="lazy" width={64} height={64} className="h-16 w-auto mb-4 rounded-full bg-white/10 p-1" />
             <p className="text-white/70 text-sm leading-relaxed max-w-[220px]">
               Località Löze, Via Salita<br />alla Cascata 3<br />
               38037 Predazzo (TN)
@@ -112,8 +112,8 @@ export default function Footer() {
             <div className="space-y-2 text-xs text-white/50">
               <p>P.IVA 00812150225</p>
               <p>CIN: IT022147B5RUTK7NS2</p>
-              <Link to="/privacy" className="block hover:text-white transition-colors mt-3">Privacy</Link>
-              <Link to="/cookie" className="block hover:text-white transition-colors">Cookie</Link>
+              <Link to="/privacy-policy" className="block hover:text-white transition-colors mt-3">Privacy Policy</Link>
+              <Link to="/cookie-policy" className="block hover:text-white transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>

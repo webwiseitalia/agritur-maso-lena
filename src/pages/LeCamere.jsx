@@ -293,6 +293,10 @@ export default function LeCamere() {
           <img
             src={cameraImg}
             alt="Suite Maso Lena"
+            title="Suite Maso Lena"
+            loading="eager"
+            width={800}
+            height={500}
             className="camere-hero-bg w-full h-[130%] object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
@@ -362,6 +366,10 @@ export default function LeCamere() {
               <img
                 src={vistaImg}
                 alt="Vista panoramica dalla camera"
+                title="Vista panoramica dalla camera"
+                loading="lazy"
+                width={600}
+                height={800}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -524,6 +532,10 @@ export default function LeCamere() {
           <img
             src={vistaImg}
             alt="Vista panoramica Lagorai"
+            title="Vista panoramica Lagorai"
+            loading="lazy"
+            width={800}
+            height={500}
             className="vista-bg w-full h-[140%] object-cover"
             style={{ objectPosition: 'center 40%' }}
           />
@@ -718,6 +730,10 @@ export default function LeCamere() {
           <img
             src={masoImg}
             alt="Maso Lena inverno"
+            title="Maso Lena inverno"
+            loading="lazy"
+            width={800}
+            height={500}
             className="cta-camere-bg w-full h-[130%] object-cover"
           />
           <div className="absolute inset-0 bg-black/60" />
