@@ -306,32 +306,25 @@ export default function Home() {
       </section>
 
       {/* MALGA BOCCHE */}
-      <section className="malga-section relative px-5 md:px-10 lg:px-16 py-24 md:py-36">
-        <div className="grid grid-cols-12 gap-6 md:gap-10 items-center">
-          <div className="col-span-12 md:col-span-6">
-            <div className="malga-number mb-6">
-              <span className="font-serif text-[4rem] md:text-[6rem] lg:text-[8rem] leading-none text-transparent" style={{ WebkitTextStroke: '1.5px var(--wood-200)' }}>1946</span>
-              <p className="text-wood-400 text-xs uppercase tracking-[0.25em] mt-2">metri s.l.m.</p>
+      <section className="malga-section relative h-[85vh] min-h-[550px] flex items-end overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={slittaImg} alt="Slitta verso Malga Bocche" className="para-img w-full h-[120%] object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+        </div>
+        <div className="relative z-10 px-5 md:px-10 lg:px-16 pb-16 md:pb-24 w-full">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+            <div className="malga-number">
+              <p className="text-[0.65rem] uppercase tracking-[0.3em] text-white/50 mb-4">1.946 m s.l.m.</p>
+              <h2 className="font-serif fluid-h1 text-white mb-4">Malga Bocche</h2>
+              <p className="text-white/70 max-w-md font-light leading-relaxed">
+                In una delle più spettacolari plaghe dolomitiche,
+                con vista sul Parco Naturale di Paneveggio e le Pale di San Martino.
+              </p>
+              <p className="text-white/40 text-xs tracking-wide mt-4">Aperta 20 giugno — 20 settembre</p>
             </div>
-            <h2 className="font-serif fluid-h3 text-wood-800 mb-4">Malga Bocche</h2>
-            <p className="text-wood-500 leading-relaxed font-light mb-6 max-w-md">
-              In una delle più spettacolari plaghe dolomitiche,
-              con vista sul Parco Naturale di Paneveggio e le Pale di San Martino.
-            </p>
-            <p className="text-wood-400 text-xs tracking-wide mb-8">Aperta 20 giugno — 20 settembre</p>
-            <div className="flex gap-3 items-center">
-              <Link to="/malga-bocche" className="btn-outline"><span>Scopri la malga</span><ArrowUpRight className="w-3.5 h-3.5" /></Link>
-            </div>
-          </div>
-          <div className="col-span-12 md:col-span-5 md:col-start-8">
-            <div className="grid grid-cols-2 gap-3">
-              <div className="img-hover-zoom aspect-[3/4]">
-                <img src={slittaImg} alt="Slitta con cavalli" className="w-full h-full object-cover" />
-              </div>
-              <div className="img-hover-zoom aspect-[3/4] mt-8">
-                <img src={famigliaImg} alt="Famiglia" className="w-full h-full object-cover" />
-              </div>
-            </div>
+            <Link to="/malga-bocche" className="btn-creative !bg-white !text-wood-900 hover:!text-wood-900">
+              <span>Scopri la malga</span><ArrowUpRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>
